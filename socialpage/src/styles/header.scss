@@ -1,0 +1,60 @@
+@import "./colors.scss";
+
+header {
+    background: $bunting-950;
+    display: flex;
+    height: 3rem;
+
+    h1 {
+        margin: auto 2rem;
+        color: $bunting-50;
+        cursor: pointer;
+    }
+
+    .area_info {
+        margin: auto 1rem auto auto;
+        height: 100%;
+        display: flex;
+
+        .user_info {
+            color: $bunting-50;
+            margin: auto 1rem 0.5rem auto;
+            font-size: 1.2rem;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+        }
+
+        .headerBotons {
+            margin: auto 2rem 0.5rem auto;
+            background: none;
+            border: none;
+            color: $bunting-50;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
+
+@media (width <= 440px) {
+    header{
+        h1{
+            font-size: 1rem;
+        }
+        .area_info {
+            .headerBotons{
+                font-size: .8rem;
+                margin-right: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+Table users{
+  id uuid [primary key]
+  nickname varchar(50)
+  username varchar(50)
+  password varchar(5000)
+}
+
+Table users_info{
+  id uuid [primary key]
+  description varchar(250)
+  perfil_image varchar(5000)
+  id_user uuid
+}
+
+Table roles {
+  id uuid [primary key]
+  name varchar(50)
+}
+
+Table user_role{
+  id_user uuid [primary key]
+  id_role uuid [primary key]
+}
+
+Table image{
+  id uuid [primary key]
+  description varchar(250)
+  url_image varchar(5000)
+  id_user uuid
+  createAt Date,
+  updateAt Date
+}
+
+Table coments{
+  id uuid [primary key]
+  coment varchar(250)
+  id_imagen uuid
+  id_user uuid
+  createAt Date
+}
+
+Ref: users.id - users_info.id_user
+Ref: users.id < user_role.id_user
+Ref: roles.id < user_role.id_role
+Ref: users.id < image.id_user
+Ref: image.id < coments.id_imagen
+Ref: users.id < coments.id_user

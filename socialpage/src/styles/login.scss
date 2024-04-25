@@ -1,0 +1,48 @@
+@import "./colors.scss";
+
+
+
+.from_login{
+    width: 40rem;
+    background: $bunting-900;
+    display: flex;
+    flex-direction: column;
+    margin:5rem auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 20px;
+    h2{
+        color: $bunting-50;
+        margin-bottom: 1rem;
+        font-size:2em;
+    }
+    label{
+        color: $bunting-50;
+        font-size: 1.3em;
+    }
+    .entrada{
+        font-size: 1.3em;
+        padding: 0.2rem;
+        border-radius: 0.3rem;
+        border: none;
+        margin: 0.5rem 0;
+        outline: none;
+        color: $bunting-900;
+        &#username{
+            margin-bottom: 1.5rem;
+        }
+       
+    }
+    .boton_subir{
+        margin:1rem auto 0.5rem;
+        font-size: 1.5rem;
+        box-sizing: content-box;
+    }
+}
+
+@media (width <= 712px) {
+    .from_login{
+        width: 87%;
+        font-size: 15px;
+    }
+}

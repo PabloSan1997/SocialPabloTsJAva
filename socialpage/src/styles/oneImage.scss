@@ -1,0 +1,64 @@
+@import "./colors.scss";
+
+.caja-one {
+    width: 90%;
+    margin: 2rem auto 0.5rem;
+
+    .image_area {
+        display: flex;
+        .my_image {
+            width: 70%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .user_public {
+        width: 30%;
+        .desc{
+            font-size: 1.2rem;
+            max-width: 90%;
+            margin:1rem auto;
+            color: $bunting-50;
+        }
+        
+    }
+    .area_coments{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        h3{
+            color: $bunting-50;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+@media (width <= 700px) {
+    .caja-one {
+        .image_area {
+            flex-direction: column;
+            .my_image {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .user_public {
+            width: 100%;
+            margin-top: 0.8rem;
+            .desc{
+                font-size: 1.2rem;
+                max-width: 95%;
+            }
+            
+        }
+        .area_coments{
+            margin-top: 1rem;
+        }
+    }
+}

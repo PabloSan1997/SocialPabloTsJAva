@@ -1,0 +1,96 @@
+@import "./colors.scss";
+
+.caja {
+    width: 100%;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgb(4, 1, 20);
+    .user_info{
+        display: flex;
+        width: 100%;
+        position: relative;
+        .user_names{
+            margin-left: 1rem;
+            color: $bunting-50;
+            .nickname{
+                font-size: 1.5rem;
+                &:hover{
+                    transform: scale(1.1);
+                    cursor: pointer;
+                }
+            }
+            .username{
+                &:hover{
+                    transform: scale(1.1);
+                    cursor: pointer;
+                }
+            }
+            span{
+                &.fecha{
+                    font-size: 0.8rem;
+                    margin-top: 0.2rem;
+                }
+            }
+        }
+        .perfil_image{
+            max-width: 3rem;
+            height: 3rem;
+            border-radius: 100%;
+            &:hover{
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }
+        .user_names{
+            display: flex;
+            flex-direction: column;
+        }
+        .bar_icon{
+            width: 2rem;
+            color: $bunting-50;
+            position: absolute;
+            right: 0.5rem;
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.2);
+            }
+        }
+    }
+    .image_area{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        p{
+            color: $bunting-50;
+            margin:0.5rem 4rem 1rem;
+            font-size: 1.2rem;
+        }
+        .image{
+        max-width: 70%;
+        margin: auto;
+        cursor: pointer;
+        }
+        .coment{
+            color: $bunting-50;
+            margin:0.5rem auto 1rem 2rem;
+        }
+    }
+}
+
+@media (width < 490px) {
+    .caja .image_area{
+        width: 100%;
+        p{
+            width: 95%;
+            margin:0.5rem auto 1rem auto;
+    }
+
+    .coment{
+        color: $bunting-50;
+        margin:0.8rem auto 1rem 0.5rem;
+    }
+
+    .image{
+        width: 100%;
+    }
+}
+}

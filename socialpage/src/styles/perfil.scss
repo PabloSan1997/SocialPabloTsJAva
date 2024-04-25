@@ -1,0 +1,47 @@
+@import "./colors.scss";
+
+.conte_perfil{
+    display: flex;
+    height: 50vh;
+    .part{
+        width: 50%;
+        display: flex;
+        img{
+            max-width: 80%;
+            margin: auto;
+            max-height: 80%;
+        }
+        &.user-part{
+            flex-direction: column;
+            span{
+                color: $bunting-50;
+                &.nickname{
+                    margin-top: 10%;
+                    font-size: 2rem;
+                    margin-bottom: 0.4rem;
+                }
+            }
+            p{
+                color: $bunting-50;
+                margin-top: 1rem;
+                font-size: 1.3rem;
+                max-width: 95%;
+            }
+        }
+    }
+}
+
+@media (width < 600px){
+    .conte_perfil{
+        flex-direction: column;
+        height: fit-content;
+        margin-top: 1rem;
+        .part{
+            width: 100%;
+            &.user-part{
+                width: 90%;
+                margin: auto;
+            }
+        }
+    }
+}

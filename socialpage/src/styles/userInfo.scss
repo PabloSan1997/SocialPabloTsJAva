@@ -1,0 +1,43 @@
+@import "./colors.scss";
+
+.my_user {
+    width: 90%;
+    margin: 0 1rem;
+    display: flex;
+
+    .user_names {
+        display: flex;
+        flex-direction: column;
+        margin: auto 1rem;
+        span {
+            color: $bunting-50;
+            &.username{
+                &:hover{
+                    transform: scale(1.1);
+                    cursor: pointer;
+                }
+            }
+            &.nickname{
+                font-size: 1.2rem;
+                &:hover{
+                    transform: scale(1.1);
+                    cursor: pointer;
+                }
+            }
+            &.fecha{
+                font-size: 0.8rem;
+                margin-top: 0.2rem;
+            }
+        }
+    }
+
+    img {
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 100%;
+        &:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
+}

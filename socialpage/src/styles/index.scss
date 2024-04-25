@@ -1,0 +1,52 @@
+@import "./colors.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+body {
+    background: rgb(18, 16, 22);
+}
+
+.message{
+    color: rgb(253, 231, 231);
+}
+
+.list_options{
+    position: absolute;
+    right: 3.5rem;
+    background: $bunting-800;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0.5rem;
+    color: $bunting-50;
+    cursor: pointer;
+    li{
+       padding: 0.3rem;
+       &:hover{
+        transform: scale(1.1);
+        background: rgba(255, 255, 255, 0.158);
+    }
+    }
+}
+
+.myboton {
+    padding: 0.2rem 1rem;
+    background: $color-boton;
+    color: $bunting-50 ;
+    border-radius: 0.3rem;
+    border: 0.1rem outset $boton-border;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+    &:hover {
+        background: $boton-hover;
+    }
+
+    &:active {
+        border-style: inset;
+    }
+}

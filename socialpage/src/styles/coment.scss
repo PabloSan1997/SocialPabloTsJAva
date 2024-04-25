@@ -1,0 +1,24 @@
+@import "./colors.scss";
+
+.coments{
+    display: flex;
+    flex-direction: column;
+    background: $bunting-900;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    .icono{
+        width: 2rem;
+        color: $bunting-50;
+        position: absolute;
+        right: 0.5rem;
+        &:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+    }
+    .data{
+        margin-top: 1rem;
+        color: $bunting-50;
+    }
+}

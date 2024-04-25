@@ -1,0 +1,46 @@
+@import "./colors.scss";
+
+.from_image {
+    background: $bunting-900;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1rem;
+    width: 90%;
+
+    h2 {
+        background: $bunting-800;
+        padding: 0.3rem;
+        color: $bunting-50;
+        margin-bottom: 0.8rem;
+    }
+
+    label {
+        color: $bunting-50;
+        font-size: 1.1rem;
+        margin-left: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .entrada {
+        margin: 0 1rem 1rem;
+        font-size: 1.2rem;
+        outline: none;
+        color: $bunting-800;
+        padding: 0.2rem;
+        &#descrition {
+            max-width: calc(100% - 2rem - 0.4rem);
+            min-width: calc(100% - 2rem - 0.4rem);
+            min-height: 3rem;
+            max-height: 10rem;
+        }
+    }
+    button{
+        margin:0 auto 0.5rem 1rem;
+        font-size: 1.3rem;;
+    }
+    .message-error{
+        color: $message-color;
+        margin: 0.5rem 1rem;
+    }
+}
