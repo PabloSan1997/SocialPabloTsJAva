@@ -4,7 +4,7 @@ import { MainUserInfo } from "./MainUserInfo";
 import { ListCreateLogin } from "./ListCrateLogin";
 import { useNavigate } from "react-router-dom";
 import '../styles/header.scss';
-
+import logo from '../assets/logo.svg';
 
 export function Header({ isLoggin }: { isLoggin: boolean }) {
     const dispatch = useAppDispatch();
@@ -17,7 +17,9 @@ export function Header({ isLoggin }: { isLoggin: boolean }) {
         <header>
             <h1
                 onClick={() => navigate('/home')}
-            >Mi Socail</h1>
+            >
+                <img src={logo} alt="" /> 
+            Mi Socail</h1>
             <div className="area_info">
                 <MainUserInfo />
                 {isLoggin ? (

@@ -9,7 +9,7 @@ import { FormRegisterUser } from "../components/FormRegisterUser";
 
 export function CreateCount() {
     const state = useAppSelector(state => state.socialReducer);
-
+    
     if (state.token) return <Navigate to={'/home'} />
     return (
         <>

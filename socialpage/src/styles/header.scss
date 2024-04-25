@@ -6,9 +6,16 @@ header {
     height: 3rem;
 
     h1 {
-        margin: auto 2rem;
+        margin: auto 1rem;
         color: $bunting-50;
         cursor: pointer;
+        display: flex;
+        align-items: center;
+        img{
+            width: 2rem;
+            margin-right: 0.2rem;
+
+        }
     }
 
     .area_info {
