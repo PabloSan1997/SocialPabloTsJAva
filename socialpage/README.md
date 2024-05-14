@@ -30,6 +30,7 @@ Con el comando `npm run dev` se ejecuta el modo desarrollado de la pagina, antes
 
 La pagina cuenta con 5 secciones principales: Login, Registrar, Home, Imagen completa y perfil
 
+
 ### Sección Login
 
 ![Login](../captures/login.PNG "Login")
@@ -46,7 +47,28 @@ La pagina cuenta con 5 secciones principales: Login, Registrar, Home, Imagen com
 
 ![Home](../captures/home.PNG "Home")
 
+![Home imagen](../captures/imagePage.png "Home imagen")
+
 #### Home responsive
 
 ![Home responsive](../captures/homeresponse.PNG "Home responsive")
 
+### Sección Imagen completa
+
+![Imagen](../captures/fullimage1.PNG "Imagen")
+
+![Comentarios](../captures/fullimage2.PNG "Comentarios")
+
+### Sección perfil
+
+![perfil](../captures/perfil.PNG "perfil")
+
+#### Perfil de un amigo
+
+![perfil2](../captures/perfilFriend.PNG "perfil2")
+
+#### Menu para borrar imagen o comentario
+
+![borrar](../captures/opcion%20borrar.PNG "borrar")
+
+Solamente se pueden borrar tus propias imagens, comentarios y los comentarios de tus imagenes.
