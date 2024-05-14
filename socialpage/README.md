@@ -30,6 +30,23 @@ Con el comando `npm run dev` se ejecuta el modo desarrollado de la pagina, antes
 
 La pagina cuenta con 5 secciones principales: Login, Registrar, Home, Imagen completa y perfil
 
-### Seccion Login
+### Sección Login
 
 ![Login](../captures/login.PNG "Login")
+
+#### Login responsive
+
+![Login responsive](../captures/loginResponsive.PNG "Login responsive")
+
+### Sección registrar
+
+![Register](../captures/register.PNG "Register")
+
+### Sección Home
+
+![Home](../captures/home.PNG "Home")
+
+#### Home responsive
+
+![Home responsive](../captures/homeresponse.PNG "Home responsive")
+
