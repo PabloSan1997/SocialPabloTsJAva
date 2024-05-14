@@ -411,3 +411,7 @@ Si hay algún error en cualquier solicitud se respndera con el siguiente json
 	"message": "string"
 }
 ```
+
+## Autor
+
+- [Jose Pablo SG](https://github.com/PabloSan1997 "Jose Pablo SG")
