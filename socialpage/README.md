@@ -1,30 +1,35 @@
-# React + TypeScript + Vite
+# Social Pablo Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+En esta sección se muestran todos los archivos de la pagina web de la aplicacion Social Pablo
 
-Currently, two official plugins are available:
+## Tecnologías
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Lenguajes: Typescript, Html, SCSS
+- Librerías: React, React Redux, Redux - Toolkit`, Vite
+- Entornos: NodeJS
 
-## Expanding the ESLint configuration
+## Instalación
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Al clonar o instalar todos los archivos abra en su consola esta seccion y ejecute el comando
+`npm install`
 
-- Configure the top-level `parserOptions` property like this:
+En el archivo `package.json` se encuentran tres scrips para ejecutar la pagina o crear los archivos estaticos.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
+```JSON
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
-}
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Con el comando `npm run dev` se ejecuta el modo desarrollado de la pagina, antes de ejecutar este comando asegurese de haber inicializado uno de los dos servicios y agregar su respectivo puerto.
+
+## Capturas
+
+La pagina cuenta con 5 secciones principales: Login, Registrar, Home, Imagen completa y perfil
+
+### Seccion Login
+
+![Login](../captures/login.PNG "Login")
