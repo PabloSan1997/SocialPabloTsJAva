@@ -27,7 +27,7 @@ Table image{
   description varchar(250)
   url_image varchar(5000)
   id_user uuid
-  createAt Date,
+  createAt Date
   updateAt Date
 }
 
@@ -45,3 +45,5 @@ Ref: roles.id < user_role.id_role
 Ref: users.id < image.id_user
 Ref: image.id < coments.id_imagen
 Ref: users.id < coments.id_user
+
+// codigo generado en https://dbdiagram.io/home

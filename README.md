@@ -13,10 +13,16 @@ Se desarrollaron dos servidores con lenguajes distintos, dichos lenguajes son Ty
 
 ## Servidores
 
-Como se mencionó, ambos servidores elaboran las mismas tareas, por lo que solo es necesario solo activar uno. Los puertos en los que corren estos servidores de manera local `localhost` son los siguientes:
+Como se mencionó, ambos servidores elaboran las mismas tareas, por lo que solo es necesario activar uno. Los puertos en los que corren estos servidores de manera local `localhost` son los siguientes:
 
 - Servidro de Typescript: `3010`
 - Servidor de Java: `3009`
+
+### Datos y relaciones
+
+Para este proyecto se utilizó [Postgresql](https://www.postgresql.org/ "Postgresql") y las tablas con sus relaciones se muestran en la siguiente imagen.
+
+[![Tabla](./captures/tablas.PNG "la salida")](./tablesDiagrams.txt "Tabla")
 
 ### Solicitudes a los servidores
 
