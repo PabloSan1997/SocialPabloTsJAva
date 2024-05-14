@@ -10,7 +10,7 @@ En esta sección se muestran todos los archivos de la pagina web de la aplicacio
 
 ## Instalación
 
-Al clonar o instalar todos los archivos abra en su consola esta seccion y ejecute el comando
+Al clonar o descarga todos los archivos y abra en su consola esta seccion y ejecute el comando
 `npm install`
 
 En el archivo `package.json` se encuentran tres scrips para ejecutar la pagina o crear los archivos estaticos.
