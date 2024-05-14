@@ -4,9 +4,9 @@ En esta sección se muestran todos los archivos de la pagina web de la aplicacio
 
 ## Tecnologías
 
-- Lenguajes: Typescript, Html, SCSS
-- Librerías: React, React Redux, Redux - Toolkit`, Vite
-- Entornos: NodeJS
+- **Lenguajes**: Typescript, Html, SCSS
+- **Librerías**: React, React Redux, Redux - Toolkit`, Vite
+- **Entornos**: NodeJS
 
 ## Instalación
 
