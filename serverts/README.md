@@ -4,9 +4,10 @@ En esta carpeta se encuentran todos los archivos para el funcionamiento del serv
 
 ## Tecnologías
 
-- **Lenguajes**: Typescript.
+- **Lenguajes**: Typescript, Javascript.
 - **Librerias y frameworks**: Express, TypeOrm, @Hapi/boom, Joi, BCrypt, Jsonwebtoken.
 - **Base de datos**: Postgresql
+- **Entornos**: NodeJs
 
 ## Instalación
 
